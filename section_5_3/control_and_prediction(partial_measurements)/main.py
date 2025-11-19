@@ -67,8 +67,8 @@ if __name__ == "__main__":
     # --- Load trained models ---
 
     data_path = os.path.join(PROJECT_ROOT, 'section_5_3', 'control_and_prediction(partial_measurements)', 'learned_models')
-    proposed_model = torch.load(os.path.join(data_path, "Narx_proposed_4"), weights_only=False)
-    baseline_model = torch.load(os.path.join(data_path, "Narx_baseline_model_4"), weights_only=False)
+    proposed_model = torch.load(os.path.join(data_path, "Narx_proposed"), weights_only=False)
+    baseline_model = torch.load(os.path.join(data_path, "Narx_baseline"), weights_only=False)
     proposed_model.NN_decoder.eval()
 
     # --- Multi-step prediction comparison ---
